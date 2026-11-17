@@ -1,0 +1,37 @@
+{
+  "provider": "CALCE",
+  "capacity_cell": "SP20-1",
+  "model_cell": "SP20-2",
+  "training_file": "11_05_2015_SP20-2_DST_80SOC.xls",
+  "test_file": "11_05_2015_SP20-2_DST_50SOC.xls",
+  "capacity_reduction": {
+    "discharge_ah": 2.0091651392712633,
+    "charge_ah": 0.0,
+    "discharge_wh": 7.178110001699479,
+    "charge_wh": 0.0,
+    "max_gap_s": 1.0165708225031267,
+    "cycler_discharge_ah": 2.009444140560707,
+    "cycler_discharge_wh": 7.179246865810065,
+    "ah_difference_pct": -0.013884500883198925,
+    "wh_difference_pct": -0.015835423016308248
+  },
+  "train_samples": 10634,
+  "test_samples": 6682,
+  "train_below_cutoff_tail_excluded": 11,
+  "test_below_cutoff_tail_excluded": 16,
+  "one_rc_test_rmse_v": 0.016035151064370562,
+  "r_only_test_rmse_v": 0.018256758420540378,
+  "one_rc_max_abs_test_error_v": 0.3102958070778872,
+  "parameters": {
+    "coefficients": [
+      3.3652662144279994,
+      1.3901149487028055,
+      -2.7947309553693316,
+      2.4995434941425843,
+      0.07492726712099122,
+      0.018938614049982334
+    ],
+    "tau_s": 17.635640923840484,
+    "capacity_prior_ah": 2.0
+  }
+}

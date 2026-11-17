@@ -1,0 +1,3 @@
+cc -std=c11 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer firmware/telemetry.c firmware/test_telemetry.c -o build/test_telemetry_san
+./build/test_telemetry_san
+Telemetry CRC, encoding, input and timer invariants passed

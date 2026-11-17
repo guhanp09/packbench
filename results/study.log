@@ -1,0 +1,35 @@
+/opt/anaconda3/bin/python3 tools/study.py
+CALCE archives present; source checksums verified
+# Cell characterization
+
+Measured data: University of Maryland CALCE. No measurements were collected by
+this project. The capacity test is SP20-1; voltage-model runs are SP20-2. The
+capacity result is not transferred as a measured property of SP20-2.
+
+SP20-1 integrated discharge: 2.0092 Ah and
+7.1781 Wh. Relative to the cycler counters, differences
+are -0.0139% and -0.0158%.
+Integration begins with the first available segment sample; no missing endpoint
+is inferred. The full discharge reaches the source experiment's 2.5 V cutoff;
+this is a record reduction, not a proposed cell operating limit.
+
+The SP20-2 80% initial-SOC DST run supplies 10634 training samples.
+The separate 50% run supplies 6682 test samples. Both are cut at the first
+voltage below 2.7 V; 11 and 16 trailing samples are
+excluded respectively. All parameter and time-constant selection uses the
+training run. The nominal 2 Ah SOC proxy and source-reported starting SOCs are
+fixed priors, not estimated truth. Initial RC polarization is zero after rest.
+
+One-RC test voltage RMSE: 16.0 mV.
+R-only baseline: 18.3 mV.
+Largest one-RC absolute test error: 310.3 mV.
+Effective fitted R0=74.9 mΩ,
+R1=18.9 mΩ, tau=17.64 s.
+
+The cubic quasi-OCV fit and one RC branch are empirical approximations over one
+cell's observed range. These are not chemistry identification, equilibrium OCV,
+high-rate aircraft validation or lifetime predictions. A lower test error cannot
+qualify a pack or justify extrapolation to another temperature or cell type.
+
+See `data/sources.json` for URLs and hashes, `docs/model.md` for equations and
+`docs/evidence.md` for the separation of analysis, firmware and physical tests.

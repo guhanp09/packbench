@@ -1,0 +1,11 @@
+id,requirement,status,evidence
+PB-01,Integrate measured Ah/Wh with explicit current sign,passed,tests.log;cell_report.md
+PB-02,Evaluate voltage prediction on a separate run without fitting on it,passed,metrics.json;cell_model.png
+PB-03,Reject corrupted packets and preserve signed units,passed,tests.log
+PB-04,"Detect loss, timestamp problems and session-boundary truncation",passed,tests.log
+PB-05,Compile the telemetry core for Cortex-M0+,passed,arm.log
+PB-06,Screen energy/current/voltage infeasibility of an assumed pack,passed,pack_screen.json;pack_sweep.csv
+PB-07,"Retain input origin, specimen identity and hashes",passed,../data/sources.json;provenance.json
+PB-08,Verify calibrated physical acquisition and MCU timing,open,../docs/bench-plan.md
+PB-09,"Verify real pack protection, cooling and failure response",open,../docs/evidence.md
+PB-10,Qualify a craft or obtain class approval,outside scope,../docs/evidence.md

@@ -1,0 +1,75 @@
+{
+  "data_owner": "University of Maryland CALCE",
+  "physical_measurements_by_project": false,
+  "commands": {
+    "tests": {
+      "command": [
+        "make",
+        "test",
+        "PYTHON=/opt/anaconda3/bin/python3"
+      ],
+      "exit_code": 0
+    },
+    "arm": {
+      "command": [
+        "make",
+        "arm"
+      ],
+      "exit_code": 0
+    },
+    "sanitizers": {
+      "command": [
+        "make",
+        "sanitize"
+      ],
+      "exit_code": 0
+    },
+    "study": {
+      "command": [
+        "make",
+        "study",
+        "PYTHON=/opt/anaconda3/bin/python3"
+      ],
+      "exit_code": 0
+    }
+  },
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.2",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.9.2",
+    "pytest": "9.0.3"
+  },
+  "source_sha256": {
+    "firmware/emit_fixture.c": "87d15c999fec7ec9106fdae3d1281373cfa13e1fdf37b14c23b56e6f8a383f55",
+    "firmware/telemetry.c": "2fac6bbf05451bcc6c23382b7e70f7ce02c3e7808a6ebea75ece75273746b85e",
+    "firmware/telemetry.h": "e18c1369b3d0313918b982d862f3001eb36d28b8beb8c40ae45a1f113134cc4e",
+    "firmware/test_telemetry.c": "c4a0dccb4e159e37552d3d17f548a442e768ac6b2ad1f2624dac76cf50a3bade",
+    "src/packbench/__init__.py": "d11c35918f24af2becf8bea23a68c46c194a9c37d2dda6fb985ae5d5961d2a25",
+    "src/packbench/cell.py": "607649af65be8b989bcd3f754df286d7c75d54bc1ac83b748673afe1f197ab95",
+    "src/packbench/pack.py": "f9c04303744419f5aae48539517eb7a3ce55cfa960b5152208c1f9c1c8df9a18",
+    "src/packbench/telemetry.py": "0a2f5c6786af73975a925a7e729b5adae682d8458b068ece7678f27eb747e56d",
+    "tests/test_cell.py": "7798d96fe6b7d0645b2108d459d6de7a779027418eb4b44a76c42d6b093484cb",
+    "tests/test_pack.py": "446dfdcbf7823c1e347c74b23a73edc09dc6e7241e68103918e79f97d9751bf6",
+    "tests/test_telemetry.py": "110aae00c7c364917a9b16a32477cd5615bfa9677905ddfd4b1e415cdfa67425",
+    "tools/evidence.py": "e68db721c18cd19ed4911cd5d77b2660f4289c21afaa78f2e9521607080e47b9",
+    "tools/fetch_data.py": "cdc861d7796b183cf2c6ad96887219cf9522c8d014736bfa60c6692f67051d04",
+    "tools/study.py": "ce13b14354adbeca526da80edb363e16ec4fca74f753ada196ac3006b6dc98ae"
+  },
+  "artifact_sha256": {
+    "results/arm.log": "9efbea9da0dd4ea70bdf4a1f9b7c16fcce85154a0f96311bf594e1954a927246",
+    "results/cell_model.png": "3fead6b1fb6fc4a9d61ce806ab1b81643d76880d05aaa05a8568eefaf578ab8e",
+    "results/cell_report.md": "493dcb3fe18fafc31f276906b11531c8a84927fad334ed2d041e4c22486491fe",
+    "results/metrics.json": "5ae0858b9317032c17ae1f3f831f0d93a440c481d4a3f546cb0dc2904a880ee2",
+    "results/pack_report.md": "52c14cf4e72a001c833702255ed683a4e444dbae67ba131d1f2e64d0b01727d9",
+    "results/pack_screen.json": "9223cb5b3960a1c3c7a417a5c3c642891ad9811dfa3eed567bdc451d05f265fc",
+    "results/pack_sweep.csv": "0b529c89effacd7b415143ed59ad7cf5aa292535fe71395ebd63e1b4a89c0e5e",
+    "results/requirements.csv": "4c4a8aef3a00df284406f3a9f639f342bb878a7ad0fec15cf9427832e83d87f0",
+    "results/sanitizers.log": "274ade14df8b1a05d54ad0a98d6df03a4f56648f00b9e420a7734548d5d42cfc",
+    "results/study.log": "7ffabe160b1f3d52bbb7e6b4b786c67229d08dc26eb4372809b8c78ba4cc2039",
+    "results/test_predictions.csv": "c4f6fe05d5b1784a708cb4e1c8ee1ce065eac632dd0f56bddb269084cc754164",
+    "results/tests.log": "89a59e36b8f94f45ac4dae034b808186d2dfa26ba3eb020a54d3d15952f5faf8"
+  }
+}

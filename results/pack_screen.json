@@ -1,0 +1,27 @@
+{
+  "assumptions": {
+    "series_cells": 24,
+    "ocv_v": 3.6,
+    "usable_fraction": 0.8,
+    "mass_overhead": 0.2,
+    "cell_mass_kg": 0.045,
+    "load_w": 6980,
+    "required_energy_wh": 5406.025641025641,
+    "cell_current_limit_a": 4.0,
+    "loaded_cell_voltage_limit_v": 2.7,
+    "basis": "illustrative combination of two CALCE specimens; no physical pack"
+  },
+  "lightest_passing_enumerated": {
+    "series": 24,
+    "parallel": 40,
+    "cells": 960,
+    "usable_energy_wh": 5512.788481305201,
+    "pack_mass_kg": 51.839999999999996,
+    "pack_current_a": 85.5587477743587,
+    "cell_current_a": 2.1389686943589674,
+    "loaded_cell_v": 3.3992238187068686,
+    "loss_w": 412.2758077045904,
+    "passes": true,
+    "reason": ""
+  }
+}

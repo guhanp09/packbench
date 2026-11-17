@@ -1,0 +1,17 @@
+name: Cell, telemetry and target checks
+on: [push, pull_request]
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-tested.txt
+      - run: pip install -e .
+      - run: make evidence
+      - uses: actions/upload-artifact@v4
+        with:
+          name: executed-evidence
+          path: results/

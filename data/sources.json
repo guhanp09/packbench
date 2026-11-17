@@ -1,0 +1,16 @@
+{
+  "capacity.zip": {
+    "url": "https://web.calce.umd.edu/batteries/data/SP1_Initial%20capacity_10_16_2015.zip",
+    "sha256": "f8ba5d743d5a5c2e4da73664490b76744b6a89e4a2e7332fc1a6dd7cd06e311b",
+    "bytes": 3370015,
+    "provider": "University of Maryland CALCE",
+    "acquired": "2026-11-17"
+  },
+  "dst.zip": {
+    "url": "https://web.calce.umd.edu/batteries/data/SP2_25C_DST.zip",
+    "sha256": "3d3a90a67574c336eca9d097a5f139aaad70e7fa3106078079da9cd11d1b3661",
+    "bytes": 3189603,
+    "provider": "University of Maryland CALCE",
+    "acquired": "2026-11-17"
+  }
+}

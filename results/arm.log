@@ -1,0 +1,3 @@
+clang --target=arm-none-eabi -mcpu=cortex-m0plus -mthumb -ffreestanding -std=c11 -O2 -Wall -Wextra -Werror -pedantic -c firmware/telemetry.c -o build/telemetry-m0.o
+file build/telemetry-m0.o
+build/telemetry-m0.o: ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
