@@ -1,7 +1,5 @@
-cc -std=c11 -O2 -Wall -Wextra -Werror -pedantic firmware/telemetry.c firmware/test_telemetry.c -o build/test_telemetry
-cc -std=c11 -O2 -Wall -Wextra -Werror -pedantic firmware/telemetry.c firmware/emit_fixture.c -o build/emit_fixture
 ./build/test_telemetry
 Telemetry CRC, encoding, input and timer invariants passed
 /opt/anaconda3/bin/python3 -m pytest -q
 .................                                                        [100%]
-17 passed in 0.54s
+17 passed in 0.76s

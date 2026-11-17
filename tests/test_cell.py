@@ -33,8 +33,13 @@ def test_synthetic_identification_predicts_a_separate_profile():
     rc = polarization(t, i, 20)
     v = 3.1 + 1.1 * soc - 0.03 * i - 0.02 * rc
     fitted = fit_model(t, i, v, 0.8)
-    predicted = fitted.predict(t, i, 0.8)
-    assert np.sqrt(np.mean((predicted - v) ** 2)) < 0.002
+    test_t = np.arange(0.0, 2000.0, 2)
+    test_i = np.repeat(rng.uniform(-0.5, 3, 50), 20)
+    test_soc = soc_proxy(test_t, test_i, 0.5)
+    test_rc = polarization(test_t, test_i, 20)
+    test_v = 3.1 + 1.1 * test_soc - 0.03 * test_i - 0.02 * test_rc
+    predicted = fitted.predict(test_t, test_i, 0.5)
+    assert np.sqrt(np.mean((predicted - test_v) ** 2)) < 0.002
     assert fitted.coefficients[4] >= 0 and fitted.coefficients[5] >= 0
 
 
