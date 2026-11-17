@@ -16,7 +16,7 @@ def screen_pack(
     mass_overhead=0.2,
     usable_fraction=0.8,
     current_limit_a=4.0,
-    voltage_limit_v=2.7
+    voltage_limit_v=2.7,
 ):
     values = (
         cell_ocv_v,

@@ -23,7 +23,9 @@ def main():
     runs = {}
     for name, command in commands.items():
         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
-        (out / f"{name}.log").write_text((result.stdout + result.stderr).rstrip() + "\n")
+        (out / f"{name}.log").write_text(
+            (result.stdout + result.stderr).rstrip() + "\n"
+        )
         runs[name] = {"command": command, "exit_code": result.returncode}
         if result.returncode:
             print(result.stdout + result.stderr, file=sys.stderr)

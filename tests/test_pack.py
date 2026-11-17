@@ -11,7 +11,7 @@ def inputs(**overrides):
         cell_energy_wh=7,
         required_energy_wh=5000,
         load_w=7000,
-        **overrides
+        **overrides,
     )
 
 
