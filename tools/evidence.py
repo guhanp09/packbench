@@ -26,6 +26,7 @@ def main():
         (out / f"{name}.log").write_text((result.stdout + result.stderr).rstrip() + "\n")
         runs[name] = {"command": command, "exit_code": result.returncode}
         if result.returncode:
+            print(result.stdout + result.stderr, file=sys.stderr)
             raise RuntimeError(f"{name} failed; inspect results/{name}.log")
     requirements = [
         (
