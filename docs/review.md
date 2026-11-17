@@ -37,3 +37,10 @@ The pack example makes no thermal claim and does not close aircraft mass/drag.
 Its 24S40P point is the lightest passing member of a declared coarse enumeration;
 it is neither a continuous optimum nor a constructible pack design. The assumed
 4 A current ceiling is a screening choice rather than a qualified cell rating.
+
+The initial Linux/GCC build rejected an implicit signedness change in the CRC
+shift expression under `-Werror`. The expression now shifts through an explicit
+uint32_t temporary before truncating to uint16_t. The standard CRC vector and
+independent Python decoder exercise the unchanged byte-level result. CI now
+prints command diagnostics and retains failed-run artifacts instead of obscuring
+failures behind the evidence runner.

@@ -4,8 +4,10 @@ uint16_t pb_crc16(const uint8_t *data, size_t length) {
     uint16_t crc = 0xffffu;
     for (size_t k = 0; k < length; ++k) {
         crc ^= (uint16_t)data[k] << 8;
-        for (unsigned bit = 0; bit < 8; ++bit)
-            crc = (uint16_t)((crc & 0x8000u) ? (crc << 1) ^ 0x1021u : crc << 1);
+        for (unsigned bit = 0; bit < 8; ++bit) {
+            const uint32_t shifted = (uint32_t)crc << 1;
+            crc = (uint16_t)((crc & 0x8000u) ? shifted ^ 0x1021u : shifted);
+        }
     }
     return crc;
 }

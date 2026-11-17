@@ -44,7 +44,7 @@
   },
   "source_sha256": {
     "firmware/emit_fixture.c": "87d15c999fec7ec9106fdae3d1281373cfa13e1fdf37b14c23b56e6f8a383f55",
-    "firmware/telemetry.c": "2fac6bbf05451bcc6c23382b7e70f7ce02c3e7808a6ebea75ece75273746b85e",
+    "firmware/telemetry.c": "15c7f5a5e1e15931f63e789289c44d02ffeb2fcec24e111a6fabf5dd905baef7",
     "firmware/telemetry.h": "e18c1369b3d0313918b982d862f3001eb36d28b8beb8c40ae45a1f113134cc4e",
     "firmware/test_telemetry.c": "c4a0dccb4e159e37552d3d17f548a442e768ac6b2ad1f2624dac76cf50a3bade",
     "src/packbench/__init__.py": "d11c35918f24af2becf8bea23a68c46c194a9c37d2dda6fb985ae5d5961d2a25",
@@ -54,7 +54,7 @@
     "tests/test_cell.py": "7798d96fe6b7d0645b2108d459d6de7a779027418eb4b44a76c42d6b093484cb",
     "tests/test_pack.py": "446dfdcbf7823c1e347c74b23a73edc09dc6e7241e68103918e79f97d9751bf6",
     "tests/test_telemetry.py": "110aae00c7c364917a9b16a32477cd5615bfa9677905ddfd4b1e415cdfa67425",
-    "tools/evidence.py": "e68db721c18cd19ed4911cd5d77b2660f4289c21afaa78f2e9521607080e47b9",
+    "tools/evidence.py": "90a29f8cd2df92370ae3dd1284e06a56d442f9b79be007e4d5ab218c9218ae8e",
     "tools/fetch_data.py": "cdc861d7796b183cf2c6ad96887219cf9522c8d014736bfa60c6692f67051d04",
     "tools/study.py": "ce13b14354adbeca526da80edb363e16ec4fca74f753ada196ac3006b6dc98ae"
   },
@@ -70,6 +70,6 @@
     "results/sanitizers.log": "274ade14df8b1a05d54ad0a98d6df03a4f56648f00b9e420a7734548d5d42cfc",
     "results/study.log": "7ffabe160b1f3d52bbb7e6b4b786c67229d08dc26eb4372809b8c78ba4cc2039",
     "results/test_predictions.csv": "c4f6fe05d5b1784a708cb4e1c8ee1ce065eac632dd0f56bddb269084cc754164",
-    "results/tests.log": "89a59e36b8f94f45ac4dae034b808186d2dfa26ba3eb020a54d3d15952f5faf8"
+    "results/tests.log": "1bfae33bb21148480e521019e17ab0ae6c9fffab625022320b4dc9071d355907"
   }
 }
